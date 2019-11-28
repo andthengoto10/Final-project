@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import DbApi from "../Dbapi/Dbapi";
+import DbApi from "./Dbapi/Dbapi";
+import Time from "./Time/Time";
+import WetterApi from "./WetterApi/WetterApi";
 import "./Monitor.css";
 
 class Monitor extends Component {
@@ -7,6 +9,8 @@ class Monitor extends Component {
   render() {
     return (
       <div>
+        <Time />
+        <WetterApi />
         <DbApi />{" "}
       </div>
     );
