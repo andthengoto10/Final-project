@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Monitor.css";
 
 class Monitor extends Component {
   state = {};
