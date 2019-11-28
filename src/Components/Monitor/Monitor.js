@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import DbApi from "../Dbapi/Dbapi";
 import "./Monitor.css";
 
 class Monitor extends Component {
@@ -6,7 +7,7 @@ class Monitor extends Component {
   render() {
     return (
       <div>
-        <p>Monitor</p>
+        <DbApi />{" "}
       </div>
     );
   }

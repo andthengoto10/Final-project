@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "./dashboard.module.scss";
+import classes from "../dashboard.module.scss";
 import "./Profile.css";
-import Data from "./Data.json";
+import Data from "../Data.json";
 
 class Profile extends React.Component {
   constructor(props) {
