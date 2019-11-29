@@ -1,0 +1,58 @@
+.profileContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+header {
+  height: 35vh;
+  background: url("../../assest/Image/portfolioBg.jpg") no-repeat;
+  background-size: cover;
+  background-position: 100% 95%;
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px #ccc;
+  min-height: 65vh;
+  border-radius: 5px;
+}
+.imgProfile {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px #ccc;
+  background-color: #fff;
+  position: relative;
+  top: -45px;
+  left: 40%;
+}
+h5 {
+  margin: 0 auto 25px;
+  color: #333;
+  font-size: 1.1rem;
+}
+hr {
+  width: 60%;
+  height: 2px;
+  margin: auto;
+  background-color: #3dd7ac;
+}
+input[type="submit"] {
+  background-color: #3dd7ac;
+  border: none;
+  color: #fff;
+  padding: 8px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+label {
+  padding-left: 240px;
+  padding-right: 50px;
+}
+input[type="text"] {
+  float: right;
+  padding-right: 50%;
+  color: #738598;
+}

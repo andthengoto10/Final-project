@@ -1,5 +1,4 @@
 import React from "react";
-import classes from "../dashboard.module.scss";
 import "./Profile.css";
 import Data from "../Data.json";
 
@@ -10,20 +9,18 @@ class Profile extends React.Component {
   }
   render() {
     return (
-      <section className={classes.profileContainer}>
+      <section className="profileContainer">
         <header />
-        <section className={classes.content}>
+        <section className="content">
           <form action="">
             <img
+              className="imgProfile"
               src={this.state.MyData[0].photo}
               alt={this.state.MyData[0].firstName}
             />
+            <hr />
             <label htmlFor="id">ID:</label>
-            <input
-              type="text"
-              placeholder={this.state.MyData[0].rfId}
-              readonly
-            />
+            <input type="text" placeholder={this.state.MyData[0].id} readonly />
             <hr />
             <label htmlFor="chipNumber">Chip Number:</label>
             <input

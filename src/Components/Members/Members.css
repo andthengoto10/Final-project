@@ -1,0 +1,26 @@
+.membersContainer {
+  width: 100%;
+  padding: 3% 1% 1% 1%;
+}
+.selectButton {
+  width: 50px;
+  padding: 3px;
+  background-color: #3dd7ac;
+  color: #fff;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #3dd7ac;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #3dd7ac;
+}

@@ -1,10 +1,30 @@
-import React, { Component } from "react";
+import React from "react";
+import Data from "../Data.json";
 import "./Members.css";
+import MembersList from "./MembersList";
+import uuid from "react-uuid";
 
-class Members extends Component {
-  state = {};
+class Members extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { personData: Data };
+  }
   render() {
-    return <p>Members</p>;
+    const AllMembers = this.state.personData.map(MyData => (
+      <MembersList key={uuid()} personData={MyData} />
+    ));
+    return (
+      <table>
+        <tr>
+          <th>Matrikel Nummer</th>
+          <th>Name</th>
+          <th>Tel</th>
+          <th>E-Mail</th>
+          <th>adresse</th>
+        </tr>
+        {AllMembers}
+      </table>
+    );
   }
 }
 

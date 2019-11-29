@@ -11,7 +11,7 @@ import "./Content.css";
 class Content extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="content_container">
         <BrowserRouter>
           <Nav />
           <div className="content">
