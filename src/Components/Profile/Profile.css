@@ -1,5 +1,7 @@
 .profileContainer {
   width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 header {
   height: 35vh;
@@ -8,14 +10,14 @@ header {
   background-position: 100% 95%;
 }
 .content {
+  width: 90%;
+  margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 0 5px #ccc;
   min-height: 65vh;
-  margin: -8% 2% 2%;
   border-radius: 5px;
-  text-align: center;
 }
-img {
+.imgProfile {
   margin: 0 auto;
   width: 150px;
   height: 150px;
@@ -24,6 +26,7 @@ img {
   background-color: #fff;
   position: relative;
   top: -45px;
+  left: 40%;
 }
 h5 {
   margin: 0 auto 25px;
@@ -43,5 +46,13 @@ input[type="submit"] {
   padding: 8px 32px;
   text-decoration: none;
   margin: 4px 2px;
-  margin-left: 45%;
+}
+label {
+  padding-left: 240px;
+  padding-right: 50px;
+}
+input[type="text"] {
+  float: right;
+  padding-right: 50%;
+  color: #738598;
 }
