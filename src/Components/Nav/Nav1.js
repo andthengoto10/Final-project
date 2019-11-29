@@ -19,15 +19,15 @@ const Nav1 = () => {
             </Link>
           </li>
           <li>
-            <link to="/profile" />
+            <Link to="/profile" />
             <i>Profile</i>
           </li>
           <li>
-            <link to="/members" />
+            <Link to="/members" />
             <i>Members</i>
           </li>
           <li>
-            <link to="/report" />
+            <Link to="/report" />
             <i>Report</i>
           </li>
         </ul>

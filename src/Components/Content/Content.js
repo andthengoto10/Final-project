@@ -21,7 +21,7 @@ class Content extends Component {
               <Route path="/members" component={Members} />
               <Route path="/profile" component={Profile} />
               <Route path="/report" component={Report} />
-              <Redirect to="/" />
+              {/* <Redirect to="/" /> */}
               <Route path="/404" component={Error} />
             </Switch>
           </div>
