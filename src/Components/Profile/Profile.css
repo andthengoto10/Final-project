@@ -1,0 +1,47 @@
+.profileContainer {
+  width: 100%;
+}
+header {
+  height: 35vh;
+  background: url("../../assest/Image/portfolioBg.jpg") no-repeat;
+  background-size: cover;
+  background-position: 100% 95%;
+}
+.content {
+  background-color: #fff;
+  box-shadow: 0 0 5px #ccc;
+  min-height: 65vh;
+  margin: -8% 2% 2%;
+  border-radius: 5px;
+  text-align: center;
+}
+img {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px #ccc;
+  background-color: #fff;
+  position: relative;
+  top: -45px;
+}
+h5 {
+  margin: 0 auto 25px;
+  color: #333;
+  font-size: 1.1rem;
+}
+hr {
+  width: 60%;
+  height: 2px;
+  margin: auto;
+  background-color: #3dd7ac;
+}
+input[type="submit"] {
+  background-color: #3dd7ac;
+  border: none;
+  color: #fff;
+  padding: 8px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  margin-left: 45%;
+}
