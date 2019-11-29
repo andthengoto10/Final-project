@@ -3,7 +3,7 @@ import "./Dbapi.css";
 
 const db = {
   display: "flex",
-  height: "1000px",
+  height: "100vh",
   "background-color": "#00DFAC",
   width: "fit-content"
 };
@@ -17,22 +17,24 @@ export default class DbApi extends React.Component {
     return (
       <div className="DB" style={db}>
         <iframe
+          title="Düsseldorf, Derendorf S"
           style={monitor}
           src="http://haltestellenmonitor.vrr.de/monitor/8fdf5af2ff9b13b5f69c9bf82bdf8b16"
           frameborder="0"
         ></iframe>
 
         <iframe
+          title="Düsseldorf, Alter Schlachthof"
           style={monitor}
           src="http://haltestellenmonitor.vrr.de/monitor/6b3bd3e2d5d8ed60988f91341bc2bfb3"
           frameborder="0"
         ></iframe>
 
-        <iframe
+        {/* <iframe
           style={monitor}
           src="http://haltestellenmonitor.vrr.de/monitor/4472df4258117498ffb7870124088bb0"
           frameborder="0"
-        ></iframe>
+        ></iframe> */}
       </div>
     );
   }

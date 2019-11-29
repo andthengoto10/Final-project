@@ -1,0 +1,22 @@
+.day-details {
+  display: block;
+  clear: left;
+  border-top: 1px solid #ddd;
+  border-radius: 2px;
+}
+
+.day-details .description {
+  display: inline-block;
+  padding: 10px;
+}
+
+.day-details .date {
+  display: block;
+}
+
+.weather-icon {
+  float: left;
+  width: 50px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
