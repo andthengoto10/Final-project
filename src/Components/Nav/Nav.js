@@ -4,17 +4,28 @@ import "./Nav.css";
 
 const Nav = () => {
   return (
-    <div>
-      <nav className="nav">
-        <ul>
+    <div className="sidebarContainer">
+      <nav>
+        <ul className="nav">
           <li>
-            <Link to="/">Monitor</Link>
+            <Link to="/">
+              <i>Monitor</i>
+            </Link>
           </li>
           <li>
-            <Link to="/profile">Profile</Link>
+            <Link to="/profile">
+              <i>Profile</i>
+            </Link>
           </li>
           <li>
-            <Link to="/members">Members</Link>
+            <Link to="/members">
+              <i>Members</i>
+            </Link>
+          </li>
+          <li>
+            <Link to="/report">
+              <i>Report</i>
+            </Link>
           </li>
         </ul>
       </nav>
