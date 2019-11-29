@@ -3,7 +3,7 @@ import "./Dbapi.css";
 
 const db = {
   display: "flex",
-  height: "1000px",
+  height: "600px",
   "background-color": "#00DFAC",
   width: "fit-content"
 };

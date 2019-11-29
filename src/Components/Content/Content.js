@@ -5,6 +5,7 @@ import Members from "../Members/Members";
 import Profile from "../Profile/Profile";
 import Error from "../Error";
 import Nav from "../Nav/Nav";
+import Nav1 from "../Nav/Nav1";
 import Report from "../Report/Report";
 import "./Content.css";
 
@@ -13,7 +14,7 @@ class Content extends Component {
     return (
       <div className="container">
         <BrowserRouter>
-          <Nav />
+          <Nav1 />
           <div className="content">
             <Switch>
               <Route exact path="/" component={Monitor} />
