@@ -3,14 +3,14 @@ import "./Dbapi.css";
 
 const db = {
   display: "flex",
-  // hight: '1000px'
-  height: "-webkit-fill-available",
+  height: "1000px",
   "background-color": "#00DFAC",
   width: "fit-content"
 };
 
 const monitor = {
-  margin: "10px"
+  margin: "10px",
+  height: "-webkit-fill-available"
 };
 export default class DbApi extends React.Component {
   render() {

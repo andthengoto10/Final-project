@@ -28,3 +28,6 @@
 .App {
   font-family: "Fira Mono", monospace;
 }
+.container {
+  height: -webkit-fill-available;
+}
