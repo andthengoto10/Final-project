@@ -1,0 +1,42 @@
+.person-list {
+  min-width: 600px;
+}
+
+.bar {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 2px 16px;
+  margin: 2vh 2vw;
+}
+
+.bar:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bar img {
+  height: 10vh;
+}
+
+.main-bar {
+  background-color: #1e083a;
+  color: aliceblue;
+}
+
+.even {
+  background-color: #cefcc5;
+}
+
+.odd {
+  background-color: #c5f8fc;
+}
+/*# sourceMappingURL=PersonList.css.map */

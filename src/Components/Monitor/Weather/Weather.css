@@ -1,0 +1,23 @@
+.weather-section {
+  min-width: 40%;
+}
+.weather-component {
+  max-width: 100%;
+  margin: 10px auto;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.city-name {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.forecast-list {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
