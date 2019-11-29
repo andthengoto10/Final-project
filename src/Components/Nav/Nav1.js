@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Nav.css";
+import "./Nav1.css";
 
-const Nav = () => {
+const Nav1 = () => {
   return (
     <div className="sidebarContainer">
       <nav>
@@ -33,4 +33,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Nav1;

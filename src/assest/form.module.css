@@ -1,0 +1,106 @@
+.formContainer {
+  min-height: 90vh;
+  padding-top: 7%;
+  margin: 0% auto;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.formContainer h1 {
+  color: #3dd7ac;
+  margin-bottom: 25px;
+}
+
+.formContainer p {
+  color: #738598;
+}
+
+.formContainer a {
+  color: #3dd7ac;
+}
+
+.formContainer .msgErrors {
+  padding: 10px;
+  min-height: auto;
+  font-size: .7rem;
+  color: #ff000088;
+}
+
+.formContainer .sendEmail {
+  color: #000033;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  cursor: pointer;
+}
+
+.formContainer .sendEmail:hover {
+  text-decoration: underline;
+}
+
+.formContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+.formContainer form div {
+  width: 350px;
+  min-height: 70px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.formContainer form div .errors {
+  padding-top: 4px;
+  min-height: auto;
+  font-size: .7rem;
+  color: #ff000088;
+  text-align: left;
+}
+
+.formContainer form div .forgotPassword {
+  font-size: .7rem;
+  color: #738598;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.formContainer form div i {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.formContainer form div input {
+  width: 100%;
+  padding: 14px;
+  -webkit-box-shadow: 0 3px 3px #ccc;
+          box-shadow: 0 3px 3px #ccc;
+}
+
+.formContainer form input[type="submit"] {
+  width: 120px;
+  padding: 13px;
+  margin: 20px auto;
+  background-color: #3dd7ac;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.formContainer .notRobot {
+  width: auto;
+  margin: 0 auto;
+}
+
+.formContainer .notRobot div {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=form.module.css.map */

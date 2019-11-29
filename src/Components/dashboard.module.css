@@ -1,0 +1,234 @@
+.managerContainer {
+  min-height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.managerContainer .dailyCheckContainer {
+  width: 100%;
+  padding: 1%;
+}
+
+.managerContainer .dailyCheckContainer .tip {
+  text-align: center;
+  color: #738598;
+}
+
+.managerContainer .membersContainer {
+  width: 100%;
+  padding: 3% 1% 1% 1%;
+}
+
+.managerContainer .membersContainer .selectButton {
+  width: 50px;
+  padding: 3px;
+  background-color: #3dd7ac;
+  color: #fff;
+}
+
+.managerContainer .membersContainer .editContainer form {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 2%;
+  width: 40%;
+  min-width: 500px;
+  background-color: #fff;
+  margin: auto;
+  z-index: 7777;
+}
+
+.managerContainer .membersContainer .editContainer form .selectItems {
+  padding: 10px;
+}
+
+.managerContainer .membersContainer .editContainer form .inputItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+}
+
+.managerContainer .membersContainer .editContainer form .inputItem .errors {
+  width: 100%;
+  font-size: 0.7rem;
+  color: #ff000088;
+  padding: 10px 0 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.managerContainer .membersContainer .editContainer form .inputItem input {
+  width: 70%;
+  height: 40px;
+  padding: 14px;
+  -webkit-box-shadow: 0 0 3px #ccc;
+          box-shadow: 0 0 3px #ccc;
+}
+
+.managerContainer .membersContainer .editContainer form .inputItem input[type="submit"] {
+  width: 100px;
+  padding: 10px;
+  background-color: #3dd7ac;
+  color: #fff;
+}
+
+.managerContainer .membersContainer .editContainer form .inputItem button {
+  width: 100px;
+  padding: 10px;
+  background-color: #ff000088;
+  color: #fff;
+}
+
+.managerContainer .sidebarContainer {
+  width: 15%;
+  min-width: 240px;
+  background-color: #f7f7f7;
+  -webkit-box-shadow: 0 0 3px #ccc;
+          box-shadow: 0 0 3px #ccc;
+  padding: 3% 1% 1% 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.managerContainer .sidebarContainer header {
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+.managerContainer .sidebarContainer header i {
+  font-size: 3.5rem;
+}
+
+.managerContainer .sidebarContainer header h4 {
+  padding: 0.6rem;
+}
+
+.managerContainer .sidebarContainer aside ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  cursor: pointer;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.managerContainer .sidebarContainer aside ul li:hover {
+  color: #3dd7ac;
+  border-color: #3dd7ac;
+  text-decoration: none;
+}
+
+.managerContainer .sidebarContainer aside ul li i {
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+.managerContainer .sidebarContainer footer button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.managerContainer .sidebarContainer footer button:hover {
+  color: #3dd7ac;
+}
+
+.managerContainer .sidebarContainer footer button i {
+  font-size: 1.3rem;
+  padding-right: 0.5rem;
+}
+
+.managerContainer .profileContainer {
+  width: 100%;
+}
+
+.managerContainer .profileContainer header {
+  height: 35vh;
+  background: url("../assest/Image/portfolioBg.jpg") no-repeat;
+  background-size: cover;
+  background-position: 100% 95%;
+}
+
+.managerContainer .profileContainer .content {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px #ccc;
+          box-shadow: 0 0 5px #ccc;
+  min-height: 65vh;
+  margin: -8% 2% 2%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.managerContainer .profileContainer .content figure {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 10px #ccc;
+          box-shadow: 0 5px 10px #ccc;
+  background-color: #fff;
+  position: relative;
+  top: -45px;
+}
+
+.managerContainer .profileContainer .content h5 {
+  margin: 0 auto 25px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.managerContainer .profileContainer .content hr {
+  width: 60%;
+  height: 2px;
+  margin: auto;
+  background-color: #3dd7ac;
+}
+
+.managerContainer .comingSoon {
+  margin: 20% auto;
+}
+
+.managerContainer .blackBg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 555;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/*# sourceMappingURL=dashboard.module.css.map */
