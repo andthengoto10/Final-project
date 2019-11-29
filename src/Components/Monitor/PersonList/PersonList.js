@@ -24,9 +24,6 @@ let icons = {
 
 // initial json object
 let initialPersons = JSON.stringify([
-    {icon: 'penguin', name: 'Anton', arrive: (moment().subtract(1, 'hours').format('LT')), id: 2},
-    {icon: 'horse', name: 'Sam', arrive: '08:44', id: 3},
-    {icon: 'monkey', name: 'Polite', arrive: '08:43', id: 4},
     {icon: 'bull', name: 'Christian', arrive: '08:40', id: 5},
     {icon: 'rabbit', name: 'Rehab', arrive: '08:34', id: 6},
 ]);
@@ -36,6 +33,14 @@ let Persons = JSON.parse(initialPersons).sort((a, b) => {
     return a.arrive < b.arrive? 1 : -1;
     })
 
+// new persons to add when arrived
+let newPersons = [
+        {icon: 'monkey', name: 'Polite', arrive: '08:43', id: Math.random()},
+        {icon: 'horse', name: 'Sam', arrive: '08:44', id: Math.random()},
+        {icon: 'penguin', name: 'Anton', arrive: (moment().subtract(1, 'hours').format('LT')), id: Math.random()},
+        {icon: 'horse', name: 'Rezan',arrive: (moment().format('LT')), id: Math.random()}
+    ]
+
 
 const PersonList = () => {
 
@@ -43,20 +48,23 @@ const PersonList = () => {
     const [personsState, setPersons] = useState(Persons)
     // time state
     const [theTime, setTheTime] = useState(moment().format('LT'))
+    // index state to add new person
+    const [index, setIndex] = useState(0)
 
-    // update time every second = clock functionality
+    // update time every minut = clock functionality
     setInterval(() => {
         setTheTime(moment().format('LT'))
     }, 60000);
 
     // simulating person coming
     const addPerson = ()=> {
-            var newPerson =  JSON.parse(JSON.stringify({
-                icon: 'horse', name: 'Rezan',
-                arrive: (moment().format('LT')), id: Math.random()
-            }))
-            var Persons = [newPerson, ...personsState]
+        if(index<newPersons.length){
+            var arrivedPerson =  JSON.parse(JSON.stringify(newPersons[index]))
+            var Persons = [arrivedPerson, ...personsState]
             setPersons(Persons)
+            var next = index+1
+            setIndex(next)
+        }
     }
 
     // mapping person list
