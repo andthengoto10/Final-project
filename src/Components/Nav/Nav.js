@@ -5,8 +5,14 @@ import "./Nav.css";
 const Nav = () => {
   return (
     <div className="sidebarContainer">
-      <nav>
-        <ul className="nav">
+      <input type="checkbox" id="menyAvPaa" />
+      <label htmlFor="menyAvPaa" id="burger">
+        <div />
+        <div />
+        <div />
+      </label>
+      <nav id="meny">
+        <ul>
           <li>
             <Link to="/">
               <i>Monitor</i>
