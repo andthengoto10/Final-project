@@ -11,7 +11,7 @@ import './personImages/bull.png'
 import './personImages/mad.png'
 import './personImages/happy.png'
 
-// person icons to load person icon dynamically
+// person icons to be loaded  dynamically
 let icons = {
     penguin: './personImages/penguin.png',
     horse: './personImages/horse.png',
@@ -24,18 +24,22 @@ let icons = {
 
 // initial json object
 let initialPersons = JSON.stringify([
-    {icon: 'penguin', name: 'Anton', medCheck: (new Date('2019-11-21')), id: 2},
-    {icon: 'horse', name: 'Sam', medCheck: (new Date('2019-10-24')), id: 3},
-    {icon: 'monkey', name: 'Polite', medCheck: (moment().format('LT')), id: 4},
-    {icon: 'bull', name: 'Christian', medCheck: (new Date('2019-09-21')), id: 5},
-    {icon: 'rabbit', name: 'Rehab', medCheck: (new Date('2019-11-20')), id: 6},
+    {icon: 'bull', name: 'Christian', arrive: '08:40', id: 5},
+    {icon: 'rabbit', name: 'Rehab', arrive: '08:34', id: 6},
 ]);
 
 // parsing persons
-let Persons = JSON.parse(initialPersons)
-// .sort((a, b) => {
-//     return a.medCheck.substring(0,10) < b.medCheck.substring(0,10)? -1:1;
-// })
+let Persons = JSON.parse(initialPersons).sort((a, b) => {
+    return a.arrive < b.arrive? 1 : -1;
+    })
+
+// new persons to add when arrived
+let newPersons = [
+        {icon: 'monkey', name: 'Polite', arrive: '08:43', id: Math.random()},
+        {icon: 'horse', name: 'Sam', arrive: '08:44', id: Math.random()},
+        {icon: 'penguin', name: 'Anton', arrive: (moment().subtract(1, 'hours').format('LT')), id: Math.random()},
+        {icon: 'horse', name: 'Rezan',arrive: (moment().format('LT')), id: Math.random()}
+    ]
 
 
 const PersonList = () => {
@@ -43,18 +47,24 @@ const PersonList = () => {
     // persons state
     const [personsState, setPersons] = useState(Persons)
     // time state
-    const [theTime, setTheTime] = useState(moment().format('LTS'))
+    const [theTime, setTheTime] = useState(moment().format('LT'))
+    // index state to add new person
+    const [index, setIndex] = useState(0)
 
-    // update time every second = clock functionality
+    // update time every minut = clock functionality
     setInterval(() => {
-        setTheTime(moment().format('LTS'))
-    }, 1000);
+        setTheTime(moment().format('LT'))
+    }, 60000);
 
     // simulating person coming
     const addPerson = ()=> {
-            var newPerson =  JSON.parse(JSON.stringify({icon: 'horse', name: 'Rezan', medCheck: '08:55', id: Math.random()}))
-            var Persons = [newPerson, ...personsState]
+        if(index<newPersons.length){
+            var arrivedPerson =  JSON.parse(JSON.stringify(newPersons[index]))
+            var Persons = [arrivedPerson, ...personsState]
             setPersons(Persons)
+            var next = index+1
+            setIndex(next)
+        }
     }
 
     // mapping person list
@@ -62,17 +72,17 @@ const PersonList = () => {
 
         // change syring icon to red when not medicaly checked this month
         var smili = 
-            person.medCheck.substring(0,8) > '09:00'?
+            person.arrive.substring(0,8) > '09:00'?
             icons.mad : icons.happy;
 
         return(
             <div className={"bar " + (index%2? "even": "odd")} key={person.id} >
                 <img src={require(`${icons[person.icon]}`)} alt="Avatar"  />
                 <h4 className="name">{person.name}</h4>
-                <h4 className="med">{ person.medCheck.substring(0, 10) }</h4>
-                <img className="med-check" 
+                <h4 className="med">{ person.arrive }</h4>
+                <img className="smili" 
                     src={require(`${smili}`)} 
-                    alt="medical check"
+                    alt="smili"
                 />
                 
             </div> 
@@ -84,7 +94,7 @@ const PersonList = () => {
             <div className="bar main-bar">
                 <h4 onClick={()=>addPerson()}>Image</h4>
                 <h4>Name</h4>
-                <h4>[{theTime}]</h4>
+                <h4><strong>{theTime}</strong></h4>
                 <h4>Treatment</h4>
             </div>
 

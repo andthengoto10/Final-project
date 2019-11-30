@@ -10,15 +10,19 @@ class Monitor extends Component {
   render() {
     return (
       <div className="monitor">
+
         <PersonList />
+
         <div className="api">
           <Weather
               apiKey="5b8aac88f05d77df8cf00012dad30f43" 
               city="Düsseldorf"
               country="Germany"
             />
+            
           <DbApi />
         </div>
+
       </div>
     );
   }

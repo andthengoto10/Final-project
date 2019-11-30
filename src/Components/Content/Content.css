@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+/* .content_container{
+  display: flex;
+  flex-direction: row;
+} */
