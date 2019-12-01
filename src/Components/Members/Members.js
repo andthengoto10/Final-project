@@ -18,9 +18,9 @@ class Members extends React.Component {
         <tr>
           <th>Matrikel Nummer</th>
           <th>Name</th>
-          <th>Tel</th>
+          <th>Telefonnummer</th>
           <th>E-Mail</th>
-          <th>adresse</th>
+          <th>Addresse</th>
         </tr>
         {AllMembers}
       </table>

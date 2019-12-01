@@ -5,13 +5,13 @@
     "photo": "./userimg/anton.jpg",
     "firstName": "Ricardo",
     "lastName": "Granella",
-    "telefon": "0176-123456789",
+    "telefon": "0176-12345789",
     "matrikelNummer": "19010001",
-    "geburtsDatum": "03.11.1982",
+    "geburtsDatum": "03.11.1992",
     "adresse": {
       "plz": 51103,
       "stadt": "Köln",
-      "street": "Wiersberg",
+      "street": "Wiersbergstr.",
       "hausNummer": 31
     },
     "email": "ricardo.granella@gmail.com",
@@ -53,15 +53,15 @@
   {
     "chipNumber": "24716216063205",
     "id": "2",
-    "photo": "./userimg/anton.jpg",
+    "photo": "./userimg/mustafa.jpg",
     "firstName": "Mustafa",
     "lastName": "Keser",
-    "telefon": "0176-9284567454",
+    "telefon": "0176-92857454",
     "matrikelNummer": "19010002",
-    "geburtsDatum": "14.05.1986",
+    "geburtsDatum": "14.05.1975",
     "adresse": {
-      "stadt": "in der Erde",
-      "street": "Blummen",
+      "stadt": "Düsseldorf",
+      "street": "Blummenstr.",
       "hausNummer": "46"
     },
     "email": "mustafa.keser@gmail.com",
@@ -103,15 +103,15 @@
   {
     "chipNumber": "24716216063206",
     "id": "3",
-    "photo": "./userimg/anton.jpg",
+    "photo": "./userimg/rezan.jpg",
     "firstName": "Rezan",
     "lastName": "Mohammad",
-    "telefon": "0176-156456789",
+    "telefon": "0176-15689456",
     "matrikelNummer": "19010003",
     "geburtsDatum": "01.12.1979",
     "adresse": {
       "stadt": "Düsseldorf",
-      "street": "Son",
+      "street": "Sonner Str.",
       "hausNummer": "12"
     },
     "email": "rezan.mohammad@gmail.com",
@@ -156,12 +156,12 @@
     "photo": "./userimg/anton.jpg",
     "firstName": "Eric",
     "lastName": "Noack",
-    "telefon": "0176-333456744",
+    "telefon": "0176-33444345",
     "matrikelNummer": "19010004",
-    "geburtsDatum": "14.03.1984",
+    "geburtsDatum": "14.03.1990",
     "adresse": {
       "stadt": "Düsseldorf",
-      "street": "Moon",
+      "street": "Lilien Str.",
       "hausNummer": "97"
     },
     "email": "eric.noack@gmail.com",
@@ -206,13 +206,13 @@
     "photo": "./userimg/anton.jpg",
     "firstName": "Georg",
     "lastName": "Trietz",
-    "telefon": "0176-333456744",
+    "telefon": "0176-33345543",
     "matrikelNummer": "19010005",
     "geburtsDatum": "14.03.1984",
     "adresse": {
       "stadt": "Düsseldorf",
-      "street": "Moon",
-      "hausNummer": "97"
+      "street": "Selikumer Str",
+      "hausNummer": "73"
     },
     "email": "trietz.georg@gmail.com",
     "roles": "member",
@@ -256,15 +256,15 @@
     "photo": "./userimg/anton.jpg",
     "firstName": "Anton",
     "lastName": "Rybakov",
-    "telefon": "0176-333456744",
+    "telefon": "0157-31556781",
     "matrikelNummer": "19010006",
-    "geburtsDatum": "14.03.1984",
+    "geburtsDatum": "22.02.1983",
     "adresse": {
-      "stadt": "Düsseldorf",
-      "street": "Moon",
-      "hausNummer": "97"
+      "stadt": "Neuss",
+      "street": "Bergheimer Str.",
+      "hausNummer": "458"
     },
-    "email": "anton.rybakov@gmail.com",
+    "email": "andthengoto10@gmail.com",
     "roles": "member",
     "swipes": {
       "01.11.19": { "was": true, "in": "", "out": "" },
@@ -303,16 +303,16 @@
   {
     "chipNumber": "24716216063207",
     "id": "7",
-    "photo": "./userimg/anton.jpg",
+    "photo": "./userimg/waeel.jpg",
     "firstName": "Waeel",
     "lastName": "Alsydo",
-    "telefon": "0176-333456744",
+    "telefon": "0176-33345674",
     "matrikelNummer": "19010007",
-    "geburtsDatum": "14.03.1984",
+    "geburtsDatum": "16.13.1982",
     "adresse": {
-      "stadt": "Düsseldorf",
-      "street": "Moon",
-      "hausNummer": "97"
+      "stadt": "Köln",
+      "street": "Berliner Str.",
+      "hausNummer": "34"
     },
     "email": "alsydo.waeel@gmail.com",
     "roles": "member",
@@ -356,13 +356,13 @@
     "photo": "./userimg/anton.jpg",
     "firstName": "Rihab",
     "lastName": "Al Yasiri",
-    "telefon": "0176-333456744",
+    "telefon": "0176-37445732",
     "matrikelNummer": "19010008",
-    "geburtsDatum": "14.03.1984",
+    "geburtsDatum": "24.06.1985",
     "adresse": {
       "stadt": "Düsseldorf",
-      "street": "Moon",
-      "hausNummer": "97"
+      "street": "Geresheimer Str.",
+      "hausNummer": "12"
     },
     "email": "alyasiri.rihab@gmail.com",
     "roles": "member",
@@ -406,15 +406,15 @@
     "photo": "./userimg/anton.jpg",
     "firstName": "Klaus",
     "lastName": "Knippertz",
-    "telefon": "0176-333456744",
+    "telefon": "0176-33456342",
     "matrikelNummer": "19010009",
-    "geburtsDatum": "14.03.1984",
+    "geburtsDatum": "23.04.1969",
     "adresse": {
       "stadt": "Düsseldorf",
-      "street": "Moon",
-      "hausNummer": "97"
+      "street": "Schlosser Str.",
+      "hausNummer": "234"
     },
-    "email": "kalus.knippertz@gmail.com",
+    "email": "klaus.knippertz@gmail.com",
     "roles": "member",
     "swipes": {
       "01.11.19": { "was": true, "in": "", "out": "" },
@@ -456,13 +456,13 @@
     "photo": "./userimg/anton.jpg",
     "firstName": "Ali",
     "lastName": "Sulehria",
-    "telefon": "0176-333456744",
+    "telefon": "0176-57449328",
     "matrikelNummer": "19010010",
-    "geburtsDatum": "14.03.1984",
+    "geburtsDatum": "18.02.1981",
     "adresse": {
       "stadt": "Düsseldorf",
-      "street": "Moon",
-      "hausNummer": "97"
+      "street": "Sulehria Str.",
+      "hausNummer": "52"
     },
     "email": "sulehria.ali@gmail.com",
     "roles": "member",
@@ -506,13 +506,13 @@
     "photo": "./userimg/anton.jpg",
     "firstName": "Sallah",
     "lastName": "Al Haj Ahmad Alkriz",
-    "telefon": "0176-333456744",
+    "telefon": "0176-43456344",
     "matrikelNummer": "19010011",
     "geburtsDatum": "14.03.1984",
     "adresse": {
       "stadt": "Düsseldorf",
-      "street": "Moon",
-      "hausNummer": "97"
+      "street": "Salzer Str",
+      "hausNummer": "32"
     },
     "email": "sallah@gmail.com",
     "roles": "member",
@@ -556,13 +556,13 @@
     "photo": "./userimg/anton.jpg",
     "firstName": "Michael",
     "lastName": "Reissdorf",
-    "telefon": "0176-333456744",
+    "telefon": "0176-31556781",
     "matrikelNummer": "19010012",
     "geburtsDatum": "14.03.1984",
     "adresse": {
-      "stadt": "Düsseldorf",
-      "street": "Moon",
-      "hausNummer": "97"
+      "stadt": "Grevenbroich",
+      "street": "Neusser Str.",
+      "hausNummer": "85"
     },
     "email": "reissdorf.michael@gmail.com",
     "roles": "member",
@@ -606,13 +606,13 @@
     "photo": "./userimg/anton.jpg",
     "firstName": "Seyedmostafa",
     "lastName": "Musavi",
-    "telefon": "0176-333456744",
+    "telefon": "0176-36556723",
     "matrikelNummer": "19010013",
     "geburtsDatum": "14.03.1984",
     "adresse": {
       "stadt": "Düsseldorf",
-      "street": "Moon",
-      "hausNummer": "97"
+      "street": "Königsallee",
+      "hausNummer": "84"
     },
     "email": "musavi.navid@gmail.com",
     "roles": "member",
@@ -661,8 +661,8 @@
     "geburtsDatum": "14.03.1984",
     "adresse": {
       "stadt": "Düsseldorf",
-      "street": "Moon",
-      "hausNummer": "97"
+      "street": "Frieden Str.",
+      "hausNummer": "73"
     },
     "email": "khadouj.abdulrahman@gmail.com",
     "roles": "member",

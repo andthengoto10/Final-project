@@ -28,8 +28,10 @@
 }
 
 .main-bar {
-  background-color: #1e083a;
+  background-color: #00DFAC;
   color: aliceblue;
+  justify-content: center;
+
 }
 
 .even {
