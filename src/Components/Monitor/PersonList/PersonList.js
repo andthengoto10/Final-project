@@ -11,6 +11,8 @@ import bull from './personImages/bull.png'
 import mad from './personImages/mad.png'
 import happy from './personImages/happy.png'
 import disappointment from './personImages/disappointment.jpg'
+import coolForSchool from './personImages/cool-for-school.jpg'
+import welcomeWithoutMeme from './personImages/welcome-without-a-meme.jpg'
 
 // person icons to be loaded dynamically
 let icons = {
@@ -21,7 +23,9 @@ let icons = {
     bull,
     mad,
     happy,
-    disappointment
+    disappointment,
+    coolForSchool,
+    welcomeWithoutMeme
 }
 
 // initial json object
@@ -40,7 +44,7 @@ let newPersons = [
         {icon: 'monkey', name: 'Polite', arrive: '08:43', id: Math.random()},
         {icon: 'horse', name: 'Sam', arrive: '08:44', id: Math.random()},
         {icon: 'penguin', name: 'Anton', arrive: (moment().subtract(1, 'hours').format('LT')), id: Math.random()},
-        {icon: 'horse', name: 'Rezan',arrive: (moment().format('LT')), id: Math.random()}
+        {icon: 'horse', name: 'Rezan',arrive: (moment().format('LT')), id: Math.random()},
     ]
 
 
@@ -48,25 +52,26 @@ const PersonList = () => {
 
     // state for persons list
     const [personsState, setPersons] = useState(Persons)
-    // time state
-    const [theTime, setTheTime] = useState(moment().format('LT'))
+    // clock state
+    const [clock, setClock] = useState(moment().format('LT'))
     // index state to add new person
     const [index, setIndex] = useState(0)
     // state for popup image when person is late
-    const [popup, setPopup] = useState(false)
+    const [showPopup, setShowPopup] = useState(false)
+    const [popImg, setPopImg] = useState(icons.welcomeWithoutMeme)
+    const [arrivedName, setArrivedName] = useState('')
 
     // some time constants
     //course start time
     const ON_TIME = '09:00'
     const SECOND = 1000
-    const MINUT = 60*SECOND
     //duration of pupup image
     const POPUP_DURATION = 2*SECOND
 
-    // update time every MINUT = clock functionality
+    // update time every 10 secons = clock functionality
     setInterval(() => {
-        setTheTime(moment().format('LT'))
-    }, MINUT);
+        setClock(moment().format('LT'))
+    }, 10*SECOND);
 
     // simulating person coming and add them to person state
     const addPerson = ()=> {
@@ -75,13 +80,17 @@ const PersonList = () => {
             var Persons = [arrivedPerson, ...personsState]
             setPersons(Persons)
             setIndex(index+1)
+            setArrivedName(arrivedPerson.name)
             // showing popup if person arrived late
             if (arrivedPerson.arrive > ON_TIME) {
-                setPopup(true)
-                setTimeout(() => {
-                    setPopup(false)
-                }, POPUP_DURATION);
+                setPopImg(icons.coolForSchool)
+            }else{
+                setPopImg(icons.welcomeWithoutMeme)
             }
+            setShowPopup(true)
+            setTimeout(() => {
+                setShowPopup(false)
+            }, POPUP_DURATION);
         }
     }
 
@@ -108,7 +117,7 @@ const PersonList = () => {
             <div className="bar main-bar" onClick={()=>addPerson()}>
                 <h4 >Image</h4>
                 <h4>Name</h4>
-                <h4><strong>{theTime}</strong></h4>
+                <h4><strong>{clock}</strong></h4>
                 <h4>Treatment</h4>
             </div>
 
@@ -116,12 +125,11 @@ const PersonList = () => {
                 {persons}
 
                 {/* display popup if person is late */}
-                {popup&&
+                {showPopup&&
                     <div className='popup'>
-                        <img className='popup-img' 
-                            src={icons.disappointment} 
-                            alt="popup"
-                        />
+                        <div className='popup-img' style={{backgroundImage: `url(${popImg})`}}>
+                            <h2>{arrivedName}</h2>
+                        </div>
                     </div>
                 }
             </div>

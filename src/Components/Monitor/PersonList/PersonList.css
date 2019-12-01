@@ -54,12 +54,29 @@
 
 .popup .popup-img {
   position: absolute;
-  width: 35%;
+  width: 500px;
   left: 25%;
   right: 25%;
   top: 25%;
   bottom: 25%;
   margin: auto;
-  background: white;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popup .popup-img h2 {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.popup .late {
+  background-image: url("./personImages/cool-for-school.jpg");
+}
+
+.popup .ontime {
+  background-image: url("./personImages/welcome-without-a-meme.jpg");
 }
 /*# sourceMappingURL=PersonList.css.map */
