@@ -3,6 +3,10 @@ import moment from 'moment'
 import './PersonList.css'
 
 // importing images
+import anton from './personImages/anton.png'
+import waeel from './personImages/waeel.png'
+import rezan from './personImages/rezan.png'
+import mustafa from './personImages/mustafa.png'
 import penguin from './personImages/penguin.png'
 import horse from './personImages/horse.png'
 import monkey from './personImages/monkey.png'
@@ -14,6 +18,10 @@ import disappointment from './personImages/disappointment.jpg'
 
 // person icons to be loaded dynamically
 let icons = {
+    anton,
+    mustafa,
+    rezan,
+    waeel,
     penguin,
     horse,
     monkey,
@@ -26,8 +34,8 @@ let icons = {
 
 // initial json object
 let initialPersons = JSON.stringify([
-    {icon: 'bull', name: 'Christian', arrive: '08:40', id: 5},
-    {icon: 'rabbit', name: 'Rehab', arrive: '08:34', id: 6},
+    {icon: 'mustafa', name: 'Mustafa', arrive: '08:40', id: 5},
+    {icon: 'rezan', name: 'Rezan', arrive: '08:34', id: 6},
 ]);
 
 // parsing initialPersons
@@ -37,10 +45,10 @@ let Persons = JSON.parse(initialPersons).sort((a, b) => {
 
 // new persons to add when arrived
 let newPersons = [
-        {icon: 'monkey', name: 'Polite', arrive: '08:43', id: Math.random()},
-        {icon: 'horse', name: 'Sam', arrive: '08:44', id: Math.random()},
-        {icon: 'penguin', name: 'Anton', arrive: (moment().subtract(1, 'hours').format('LT')), id: Math.random()},
-        {icon: 'horse', name: 'Rezan',arrive: (moment().format('LT')), id: Math.random()}
+        {icon: 'mustafa', name: 'Mustafa', arrive: '08:43', id: Math.random()},
+        {icon: 'waeel', name: 'Waeel', arrive: '08:44', id: Math.random()},
+        {icon: 'anton', name: 'Anton', arrive: (moment().subtract(1, 'hours').format('LT')), id: Math.random()},
+        {icon: 'rezan', name: 'Rezan',arrive: (moment().format('LT')), id: Math.random()}
     ]
 
 
@@ -61,7 +69,7 @@ const PersonList = () => {
     const SECOND = 1000
     const MINUT = 60*SECOND
     //duration of pupup image
-    const POPUP_DURATION = 2*SECOND
+    const POPUP_DURATION = 5*SECOND
 
     // update time every MINUT = clock functionality
     setInterval(() => {
@@ -106,10 +114,12 @@ const PersonList = () => {
     return(
         <div className="person-list">
             <div className="bar main-bar" onClick={()=>addPerson()}>
-                <h4 >Image</h4>
+                    <h3>[{theTime}]</h3>
+
+                {/* <h4 >Image</h4>
                 <h4>Name</h4>
                 <h4><strong>{theTime}</strong></h4>
-                <h4>Treatment</h4>
+                <h4>Treatment</h4> */}
             </div>
 
             <div className="persons">

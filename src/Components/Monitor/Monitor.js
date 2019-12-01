@@ -12,16 +12,16 @@ const Monitor = () => {
   const [showSection, setShowSection] = useState(false);
   const MINUT = 60000;
   
+
   // checking time every 10 minutes and hide api section between 7 pm and 8 am
   setInterval(() => {
         setShowSection(moment().format('HH') > 8 && moment().format('HH') < 19)
     }, 10*MINUT);
 
-  
     return (
       <div className="monitor">
-
         <PersonList />
+          {showSection &&  
 
         <div className="api">
           <Weather
@@ -29,14 +29,10 @@ const Monitor = () => {
             city="Düsseldorf"
             country="Germany"
           />
-
           {/* show api on time */}
-          {showSection &&  
             <DbApi />
-          }
-
         </div>
-
+          }
       </div>
     );
 }
