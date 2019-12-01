@@ -3,25 +3,25 @@ import moment from 'moment'
 import './PersonList.css'
 
 // importing images
-import './personImages/penguin.png'
-import './personImages/horse.png'
-import './personImages/monkey.png'
-import './personImages/rabbit.png'
-import './personImages/bull.png'
-import './personImages/mad.png'
-import './personImages/happy.png'
-import './personImages/disappointment.jpg'
+import penguin from './personImages/penguin.png'
+import horse from './personImages/horse.png'
+import monkey from './personImages/monkey.png'
+import rabbit from './personImages/rabbit.png'
+import bull from './personImages/bull.png'
+import mad from './personImages/mad.png'
+import happy from './personImages/happy.png'
+import disappointment from './personImages/disappointment.jpg'
 
 // person icons to be loaded dynamically
 let icons = {
-    penguin: './personImages/penguin.png',
-    horse: './personImages/horse.png',
-    monkey: './personImages/monkey.png',
-    rabbit: './personImages/rabbit.png',
-    bull: './personImages/bull.png',
-    mad: './personImages/mad.png',
-    happy: './personImages/happy.png',
-    disappointment: './personImages/disappointment.jpg'
+    penguin,
+    horse,
+    monkey,
+    rabbit,
+    bull,
+    mad,
+    happy,
+    disappointment
 }
 
 // initial json object
@@ -94,13 +94,10 @@ const PersonList = () => {
 
         return(
             <div className={"bar " + (index%2 ? "odd": "even")} key={person.id} >
-                <img src={require(`${icons[person.icon]}`)} alt="Avatar"  />
+                <img src={icons[person.icon]} alt="Avatar"  />
                 <h4 className="name">{person.name}</h4>
                 <h4 className="med">{ person.arrive }</h4>
-                <img className="smili" 
-                    src={require(`${smili}`)} 
-                    alt="smili"
-                />
+                <img className="smili" src={smili}  alt="smili"/>
                 
             </div> 
         )
@@ -122,7 +119,7 @@ const PersonList = () => {
                 {popup&&
                     <div className='popup'>
                         <img className='popup-img' 
-                            src={require(`${icons.disappointment}`)} 
+                            src={icons.disappointment} 
                             alt="popup"
                         />
                     </div>
