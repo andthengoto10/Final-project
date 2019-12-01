@@ -45,7 +45,7 @@ let Persons = JSON.parse(initialPersons).sort((a, b) => {
 
 // new persons to add when arrived
 let newPersons = [
-        {icon: 'mustafa', name: 'Mustafa', arrive: '08:43', id: Math.random()},
+        {icon: 'monkey', name: 'monkey', arrive: '08:43', id: Math.random()},
         {icon: 'waeel', name: 'Waeel', arrive: '08:44', id: Math.random()},
         {icon: 'anton', name: 'Anton', arrive: (moment().subtract(1, 'hours').format('LT')), id: Math.random()},
         {icon: 'rezan', name: 'Rezan',arrive: (moment().format('LT')), id: Math.random()}
