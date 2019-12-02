@@ -1,34 +1,43 @@
 import React from "react";
 import "./Profile.css";
 import Data from "../Data.json";
+import uuid from "react-uuid";
 
 class Profile extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { MyData: Data[0], SmartL: Data, i: "" };
+    this.state = { MyData: Data[0], AllData: Data, value: "" };
   }
   handleChange = e => {
-    let Smart = this.state.SmartL;
-    let i = this.state.i;
-    for (i = 0; i < Smart.length; i++) {
-      this.setState({
-        MyData: Smart[i]
-      });
-      console.log(Smart[i]);
-    }
+    console.log(this.state.AllData);
+    let newData = this.state.AllData.filter(el => {
+      return el.id === e.target.value;
+    });
+
+    this.setState({
+      value: e.target.value,
+      MyData: newData[0]
+    });
+    console.log(this.state.MyData);
   };
 
   render() {
+    const PersonName = this.state.AllData.map(infoPerson => {
+      return (
+        <option key={uuid()} value={infoPerson.id}>
+          {infoPerson.firstName}
+        </option>
+      );
+    });
     return (
       <section className="profileContainer">
         <header />
         <section className="profileContent">
           <img className="imgProfile" src={this.state.MyData.photo} alt="" />
           <form>
-            <select onChange={this.handleChange}>
-              <option>{this.state.SmartL[0].firstName}</option>
-              <option>{this.state.SmartL[1].firstName}</option>
-              <option>{this.state.SmartL[2].firstName}</option>
+            <h3>Teilnehmer:</h3>
+            <select value={this.state.value} onChange={this.handleChange}>
+              {PersonName}
             </select>
             <table className="profileTable">
               <tr>
