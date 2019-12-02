@@ -10,7 +10,7 @@ const db = {
 
 const monitor = {
   margin: "10px",
-  height: "630px"
+  height: "610px"
 };
 export default class DbApi extends React.Component {
   render() {
