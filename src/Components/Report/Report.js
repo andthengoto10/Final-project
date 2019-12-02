@@ -1,19 +1,10 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
-class Report extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return (
-      <div>
-        <h1>Report</h1>
-        <h3>Suche</h3>
-        <input type="text" />
-      </div>
-    );
-  }
+const Report = (person="Rezan") => {
+
+  return(
+    <h1>{person}</h1>
+  )
 }
 
 export default Report;
