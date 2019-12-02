@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
-h1{
-    margin: 2vw;
+h1 {
+  margin: 2vw;
 }
-.monitor{
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Montserrat', sans-serif;
-    /* font-size: calc(1em + .1vw); */
-    line-height: 1.6;
-	margin: 0 1vw;
-	min-height: 100vh;
+.monitor {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  /* font-size: calc(1em + .1vw); */
+  line-height: 1.6;
+  margin: 0 1vw;
+  min-height: 100vh;
 }

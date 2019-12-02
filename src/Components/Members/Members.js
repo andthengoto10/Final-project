@@ -14,6 +14,7 @@ class Members extends React.Component {
       <MembersList key={uuid()} personData={MyData} />
     ));
     return (
+<<<<<<< HEAD
       <section className="membersContainer">
         <table className="membersTable">
           <tr>
@@ -26,6 +27,24 @@ class Members extends React.Component {
           {AllMembers}
         </table>
       </section>
+=======
+
+      <section className="membersContainer">
+        <table className="membersTable">
+        <tr>
+          <th>Matrikel Nummer</th>
+          <th>Name</th>
+          <th>Telefonnummer</th>
+          <th>E-Mail</th>
+          <th>Addresse</th>
+        </tr>
+        {AllMembers}
+      </table>
+      </section>
+
+
+
+>>>>>>> 01caaa02cef0aa0dfe654e912eef382b27263651
     );
   }
 }

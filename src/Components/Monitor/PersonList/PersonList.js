@@ -13,11 +13,14 @@ import monkey from './personImages/monkey.png'
 import rabbit from './personImages/rabbit.png'
 import bull from './personImages/bull.png'
 import mad from './personImages/mad.png'
+import sad from './personImages/sad.png'
 import happy from './personImages/happy.png'
 import disappointment from './personImages/disappointment.jpg'
 // popup image should be same size, in this case w600/h450
-import disaster from './personImages/disaster.jpg'
-import drama from './personImages/drama.jpg'
+// import disaster from './personImages/disaster.jpg'
+// import drama from './personImages/drama.jpg'
+import disaster from './personImages/ontime.jpg'
+import drama from './personImages/tolate.jpg'
 
 // person icons to be loaded dynamically
 let icons = {
@@ -31,6 +34,7 @@ let icons = {
     rabbit,
     bull,
     mad,
+    sad,
     happy,
     disappointment,
     drama,
@@ -50,10 +54,10 @@ let Persons = JSON.parse(initialPersons).sort((a, b) => {
 
 // new persons to add when arrived
 let newPersons = [
-        {icon: 'monkey', name: 'Professor', arrive: '08:43 AM', id: Math.random()},
-        {icon: 'penguin', name: 'Maistro', arrive: '08:49 AM', id: Math.random()},
-        {icon: 'anton', name: 'Anton', arrive: (moment().subtract(1, 'hours').format('LT')), id: Math.random()},
-        {icon: 'rezan', name: 'Rezan',arrive: (moment().format('LT')), id: Math.random()}
+        {icon: 'rezan', name: 'Rezan', arrive: '08:43 AM', id: Math.random()},
+        // {icon: 'penguin', name: 'Maistro', arrive: '08:49 AM', id: Math.random()},
+        // {icon: 'anton', name: 'Anton', arrive: (moment().subtract(1, 'hours').format('LT')), id: Math.random()},
+        {icon: 'anton', name: 'Anton',arrive: (moment().format('LT')), id: Math.random()}
     ]
 
 
@@ -75,7 +79,7 @@ const PersonList = () => {
     const ON_TIME = '09:00'
     const SECOND = 1000
     //duration of pupup image
-    const POPUP_DURATION = 4*SECOND
+    const POPUP_DURATION = 5*SECOND
 
     // update time every 10 secons = clock functionality
     setInterval(() => {
@@ -108,7 +112,7 @@ const PersonList = () => {
 
         // change smili icon based on time
         var smili = person.arrive > ON_TIME? 
-                    icons.mad : icons.happy;
+                    icons.sad : icons.happy;
 
         return(
             <div className={"bar " + (index%2 ? "odd": "even")} key={person.id} >
@@ -134,19 +138,17 @@ const PersonList = () => {
 
             <div className="persons">
                 {persons}
-
                 {/* display different popup whether person is late or not */}
                 {showPopup&&
                     <div className='popup'>
                         <div className='popup-img' style={{backgroundImage: `url(${popImg})`}}>
                             <h2>
-                                {arrivedName}
+                                {/* {arrivedName} */}
                             </h2>
                         </div>
                     </div>
                 }
             </div>
-
         </div>  
     )  
 }
