@@ -19,9 +19,9 @@ const Monitor = () => {
   const MINUT = 60000;
 
   // checking time every 10 minutes and hide api section between 7 pm and 8 am
-  setInterval(() => {
-    setShowSection(moment().format("HH") > 8 && moment().format("HH") < 19);
-  }, 10 * MINUT);
+  // setInterval(() => {
+  //   setShowSection(moment().format("HH") > 8 && moment().format("HH") < 19);
+  // }, 10 * MINUT);
 
   return (
     <div className="monitor" style={monitorStyle}>

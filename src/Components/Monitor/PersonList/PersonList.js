@@ -96,7 +96,7 @@ const PersonList = () => {
       var Persons = [arrivedPerson, ...personsState];
       setPersons(Persons);
       setIndex(index + 1);
-      setArrivedName(arrivedPerson.name);
+      // setArrivedName(arrivedPerson.name);
       // showing popup if person arrived late
       if (arrivedPerson.arrive > ON_TIME) {
         setPopImg(icons.drama);
@@ -109,7 +109,14 @@ const PersonList = () => {
       }, POPUP_DURATION);
     }
   };
+  const smiliStyle = {
+    height: "50px",
+    marginTop: "23px"
+  };
 
+  const userPic = {
+    height: "100px"
+  };
   // mapping persons list
   const persons = personsState.map((person, index) => {
     // change smili icon based on time
@@ -117,10 +124,10 @@ const PersonList = () => {
 
     return (
       <div className={"bar " + (index % 2 ? "odd" : "even")} key={person.id}>
-        <img src={icons[person.icon]} alt="Avatar" />
+        <img src={icons[person.icon]} style={userPic} alt="Avatar" />
         <h4 className="name">{person.name}</h4>
-        {/* <h4 className="med">{ person.arrive }</h4> */}
-        <img className="smili" src={smili} alt="smili" />
+        {/* <h4 className="med">{person.arrive}</h4> */}
+        <img className="smili" style={smiliStyle} src={smili} alt="smili" />
       </div>
     );
   });
@@ -145,7 +152,7 @@ const PersonList = () => {
               className="popup-img"
               style={{ backgroundImage: `url(${popImg})` }}
             >
-              <h2>{/* {arrivedName} */}</h2>
+              {/* <h2>{{ arrivedName }}</h2> */}
             </div>
           </div>
         )}
