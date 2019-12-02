@@ -7,7 +7,7 @@
     "lastName": "Alsydo",
     "telefon": "0176-333456744",
     "matrikelNummer": "19010001",
-    "geburtsDatum": "03.11.1982",
+    "geburtsDatum": "03.11.1992",
     "adresse": {
       "stadt": "Köln",
       "street": "Wirsberg",
@@ -211,8 +211,8 @@
     "geburtsDatum": "14.03.1984",
     "adresse": {
       "stadt": "Düsseldorf",
-      "street": "Moon",
-      "hausNummer": "97"
+      "street": "Selikumer Str",
+      "hausNummer": "73"
     },
     "email": "eric.noack@gmail.com",
     "roles": "Member",
@@ -258,7 +258,7 @@
     "lastName": "Trietz",
     "telefon": "0176-333456744",
     "matrikelNummer": "19010006",
-    "geburtsDatum": "14.03.1984",
+    "geburtsDatum": "22.02.1983",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Bonner",
@@ -308,7 +308,7 @@
     "lastName": "Rybakov",
     "telefon": "0176-333456744",
     "matrikelNummer": "19010007",
-    "geburtsDatum": "14.03.1984",
+    "geburtsDatum": "16.13.1982",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Namibia",
@@ -356,9 +356,9 @@
     "photo": "../../UserImage/Rihab.jpg",
     "firstName": "Rihab",
     "lastName": "Al Yasiri",
-    "telefon": "0176-333456744",
+    "telefon": "0176-37445732",
     "matrikelNummer": "19010008",
-    "geburtsDatum": "14.03.1984",
+    "geburtsDatum": "24.06.1985",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Schul",
@@ -406,9 +406,9 @@
     "photo": "../../UserImage/Klaus.jpg",
     "firstName": "Klaus",
     "lastName": "Knippertz",
-    "telefon": "0176-333456744",
+    "telefon": "0176-33456342",
     "matrikelNummer": "19010009",
-    "geburtsDatum": "14.03.1984",
+    "geburtsDatum": "23.04.1969",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Oberdorf",
@@ -456,9 +456,9 @@
     "photo": "../../UserImage/Ali.jpg",
     "firstName": "Ali",
     "lastName": "Sulehria",
-    "telefon": "0176-333456744",
+    "telefon": "0176-57449328",
     "matrikelNummer": "19010010",
-    "geburtsDatum": "14.03.1984",
+    "geburtsDatum": "18.02.1981",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Post",
@@ -506,7 +506,7 @@
     "photo": "../../UserImage/Sallah.jpg",
     "firstName": "Sallah",
     "lastName": "Al Haj Ahmad Alkriz",
-    "telefon": "0176-333456744",
+    "telefon": "0176-43456344",
     "matrikelNummer": "19010011",
     "geburtsDatum": "14.03.1984",
     "adresse": {
@@ -556,7 +556,7 @@
     "photo": "../../UserImage/Michael.jpg",
     "firstName": "Michael",
     "lastName": "Reissdorf",
-    "telefon": "0176-333456744",
+    "telefon": "0176-31556781",
     "matrikelNummer": "19010012",
     "geburtsDatum": "14.03.1984",
     "adresse": {
@@ -606,7 +606,7 @@
     "photo": "../../UserImage/Navid.jpg",
     "firstName": "Navid",
     "lastName": "Musavi",
-    "telefon": "0176-333456744",
+    "telefon": "0176-36556723",
     "matrikelNummer": "19010013",
     "geburtsDatum": "14.03.1984",
     "adresse": {

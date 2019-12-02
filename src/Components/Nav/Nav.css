@@ -24,7 +24,7 @@
   transform: translateX(0rem);
 }
 #burger {
-  position: absolute;
+  position: fixed;
   cursor: pointer;
   width: 2rem;
   height: 2rem;
@@ -33,6 +33,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  z-index: 999;
 }
 #burger > div {
   height: 2px;

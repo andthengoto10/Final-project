@@ -1,5 +1,7 @@
 .weather-section {
-  min-width: 40%;
+  max-width: 80%;
+  margin: auto;
+  font-size: calc(.5em + .1vw);
 }
 .weather-component {
   max-width: 100%;
