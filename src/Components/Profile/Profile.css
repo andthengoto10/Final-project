@@ -9,6 +9,11 @@ header {
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.profileContainer h3 {
+  display: inline;
+  padding-left: 56px;
+  padding-right: 10px;
+}
 .profileContent {
   width: 80%;
   border-radius: 0 0 10px 10px;
@@ -62,4 +67,9 @@ input[type="submit"] {
   margin: 20px 40%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+}
+select {
+  width: 15%;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
