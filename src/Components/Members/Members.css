@@ -23,3 +23,9 @@
 .membersTable tr:nth-child(even) {
   background-color: #3dd7ac;
 }
+.search-members{
+  margin: 2vh 10vw;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
