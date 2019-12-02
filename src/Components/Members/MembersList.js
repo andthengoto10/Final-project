@@ -5,7 +5,7 @@ const MembersList = props => {
   console.log(props);
   console.log(props.personData);
   return (
-    <tr className="membersContainer">
+    <tr>
       <td>{props.personData.matrikelNummer}</td>
       <td>{props.personData.firstName + " " + props.personData.lastName}</td>
       <td>{props.personData.telefon}</td>

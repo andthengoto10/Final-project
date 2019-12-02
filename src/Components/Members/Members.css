@@ -1,26 +1,25 @@
 .membersContainer {
-  width: 100%;
   padding: 3% 1% 1% 1%;
 }
-.selectButton {
-  width: 50px;
-  padding: 3px;
-  background-color: #3dd7ac;
-  color: #fff;
-}
-table {
+.membersTable {
+  width: 80%;
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-td,
-th {
-  border: 1px solid #3dd7ac;
+.membersTable td,
+.membersTable th {
+  border: 1px solid #ddd;
   text-align: left;
   padding: 8px;
 }
-
-tr:nth-child(even) {
+.membersTable th {
+  background-color: #ccc;
+}
+.membersTable tr {
+  background-color: #f2f2f2;
+}
+.membersTable tr:nth-child(even) {
   background-color: #3dd7ac;
 }

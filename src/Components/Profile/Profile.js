@@ -5,83 +5,127 @@ import Data from "../Data.json";
 class Profile extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { MyData: Data };
+    this.state = { MyData: Data[0], SmartL: Data, i: "" };
   }
+  handleChange = e => {
+    let Smart = this.state.SmartL;
+    let i = this.state.i;
+    for (i = 0; i < Smart.length; i++) {
+      this.setState({
+        MyData: Smart[i]
+      });
+      console.log(Smart[i]);
+    }
+  };
+
   render() {
     return (
       <section className="profileContainer">
         <header />
-        <section className="content">
-          <form action="">
-            <img
-              className="imgProfile"
-              src={this.state.MyData[0].photo}
-              alt={this.state.MyData[0].firstName}
-            />
-            <hr />
-            <label htmlFor="id">ID:</label>
-            <input type="text" placeholder={this.state.MyData[0].id} readonly />
-            <hr />
-            <label htmlFor="chipNumber">Chip Number:</label>
-            <input
-              type="text"
-              placeholder={this.state.MyData[0].chipNumber}
-              readonly
-            />
-            <hr />
-            <label htmlFor="Firstname">First Name:</label>
-            <input type="text" placeholder={this.state.MyData[0].firstName} />
-            <hr />
-            <label htmlFor="Lastname">Last Name:</label>
-            <input type="text" placeholder={this.state.MyData[0].lastName} />
-            <hr />
-            <label htmlFor="telefon">Tel:</label>
-            <input type="text" placeholder={this.state.MyData[0].telefon} />
-            <hr />
-            <label htmlFor="email">E-mail:</label>
-            <input type="text" placeholder={this.state.MyData[0].email} />
-            <hr />
-            <label htmlFor="plz">PLZ:</label>
-            <input type="text" placeholder={this.state.MyData[0].adresse.plz} />
-            <hr />
-            <label htmlFor="adresse">Addresse:</label>
-            <input
-              type="text"
-              placeholder={this.state.MyData[0].adresse.stadt + ", "}
-            />
-            <input
-              type="text"
-              placeholder={this.state.MyData[0].adresse.street + "Str. "}
-            />
-            <input
-              type="text"
-              placeholder={this.state.MyData[0].adresse.hausNummer}
-            />
-            <hr />
-            <label htmlFor="roles">Roles:</label>
-            <input
-              type="text"
-              placeholder={this.state.MyData[0].roles}
-              readonly
-            />
-            <hr />
-            <label htmlFor="matrikelNummer">Matrikel Nummer:</label>
-            <input
-              type="text"
-              placeholder={this.state.MyData[0].matrikelNummer}
-              readonly
-            />
-            <hr />
-            <label htmlFor="isVerified">isVerified:</label>
-            <input
-              type="text"
-              placeholder={this.state.MyData[0].isVerified}
-              readonly
-            />
-            <hr />
-            <input type="submit" placeholder="Save" />
+        <section className="profileContent">
+          <img className="imgProfile" src={this.state.MyData.photo} alt="" />
+          <form>
+            <select onChange={this.handleChange}>
+              <option>{this.state.SmartL[0].firstName}</option>
+              <option>{this.state.SmartL[1].firstName}</option>
+              <option>{this.state.SmartL[2].firstName}</option>
+            </select>
+            <table className="profileTable">
+              <tr>
+                <th>
+                  <label htmlFor="id">ID:</label>
+                </th>
+                <td>
+                  <input type="text" value={this.state.MyData.id} />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label htmlFor="chipNumber">Chip Number:</label>
+                </th>
+                <td>
+                  <input
+                    type="text"
+                    placeholder={this.state.MyData.chipNumber}
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label htmlFor="Firstname">First Name:</label>
+                </th>
+                <td>
+                  <input
+                    type="text"
+                    placeholder={this.state.MyData.firstName}
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label htmlFor="Lastname">Last Name:</label>
+                </th>
+                <td>
+                  <input type="text" placeholder={this.state.MyData.lastName} />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label htmlFor="telefon">Tel:</label>
+                </th>
+                <td>
+                  <input type="text" placeholder={this.state.MyData.telefon} />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label htmlFor="email">E-mail:</label>
+                </th>
+                <td>
+                  <input type="text" placeholder={this.state.MyData.email} />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label htmlFor="adresse">Addresse:</label>
+                </th>
+                <td>
+                  <input
+                    type="text"
+                    placeholder={this.state.MyData.adresse.stadt}
+                  />
+                  <input
+                    type="text"
+                    placeholder={this.state.MyData.adresse.street + "Str"}
+                  />
+                  <input
+                    type="text"
+                    placeholder={this.state.MyData.adresse.hausNummer}
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label htmlFor="roles">Roles:</label>
+                </th>
+                <td>
+                  <input type="text" value={this.state.MyData.roles} />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label htmlFor="matdikelNummer">Matdikel Nummer:</label>
+                </th>
+                <td>
+                  <input
+                    type="text"
+                    placeholder={this.state.MyData.matrikelNummer}
+                  />
+                </td>
+              </tr>
+            </table>
+            <input type="submit" value="Save" />
           </form>
-          <div className="portfolioSwiper">{/* <Slide /> */}</div>
         </section>
       </section>
     );

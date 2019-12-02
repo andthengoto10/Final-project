@@ -14,16 +14,18 @@ class Members extends React.Component {
       <MembersList key={uuid()} personData={MyData} />
     ));
     return (
-      <table>
-        <tr>
-          <th>Matrikel Nummer</th>
-          <th>Name</th>
-          <th>Tel</th>
-          <th>E-Mail</th>
-          <th>adresse</th>
-        </tr>
-        {AllMembers}
-      </table>
+      <section className="membersContainer">
+        <table className="membersTable">
+          <tr>
+            <th>Matrikel Nummer</th>
+            <th>Name</th>
+            <th>Tel</th>
+            <th>E-Mail</th>
+            <th>adresse</th>
+          </tr>
+          {AllMembers}
+        </table>
+      </section>
     );
   }
 }
