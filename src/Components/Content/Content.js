@@ -7,6 +7,7 @@ import Error from "../Error";
 import Nav from "../Nav/Nav";
 import Report from "../Report/Report";
 import UserProfile from "../UserProfile/UserProfile";
+import Kurse from "../Kurse/Kurse";
 
 import "./Content.css";
 
@@ -22,7 +23,7 @@ class Content extends Component {
               <Route path="/members" component={Members} />
               <Route path="/profile" component={Profile} />
               <Route path="/report" component={Report} />
-              <Route path="/members" component={Members} />
+              <Route path="/kurse" component={Kurse} />
 
               <Route path="/userProfile" component={UserProfile} />
               {/* <Redirect to="/" /> */}
