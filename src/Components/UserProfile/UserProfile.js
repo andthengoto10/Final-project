@@ -1,13 +1,25 @@
 import React from "react";
 import "./UserProfile.css";
 import Data from "../Data.json";
+import Timer from "./Timer";
 // import uuid from "react-uuid";
+
+const nameStyle = {
+  display: "flex",
+  flexDirection: "row",
+  justifyConrent: "space-between"
+};
+
+const h1Style = {
+  paddingRight: "330px"
+};
 
 class Profile extends React.Component {
   constructor(props) {
     super(props);
     this.state = { MyData: Data[0], AllData: Data, value: "" };
   }
+
   handleChange = e => {
     console.log(this.state.AllData);
     let newData = this.state.AllData.filter(el => {
@@ -35,7 +47,10 @@ class Profile extends React.Component {
         <section className="profileContent">
           <img className="imgProfile" src={this.state.MyData.photo} alt="" />
           <form>
-            <h1>Waeel Alsydo</h1>
+            <div style={nameStyle}>
+              <h1 style={h1Style}>Waeel Alsydo</h1>
+              <Timer />
+            </div>
 
             <table className="profileTable">
               <tr>
@@ -133,8 +148,6 @@ class Profile extends React.Component {
             </table>
             <div className="button">
               <input type="submit" value="Save" />
-              <input type="button" value="Start" />
-              <input type="button" value="Stop" />
             </div>
           </form>
         </section>
