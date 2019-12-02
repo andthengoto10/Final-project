@@ -10,11 +10,12 @@ const monitorStyle = {
   display: "flex",
   margin: "10px",
   height: "-webkit-fill-available",
-  justifyContent: "flex-start"
+  justifyContent: "flex-start",
+  marginTop: "25px"
 };
 const Monitor = () => {
   // state to show section
-  const [showSection, setShowSection] = useState(false);
+  const [setShowSection] = useState(false);
   const MINUT = 60000;
 
   // checking time every 10 minutes and hide api section between 7 pm and 8 am
