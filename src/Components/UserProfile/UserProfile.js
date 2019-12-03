@@ -49,7 +49,6 @@ class Profile extends React.Component {
           <form>
             <div style={nameStyle}>
               <h1 style={h1Style}>Waeel Alsydo</h1>
-              <Timer />
             </div>
 
             <table className="profileTable">
@@ -148,6 +147,9 @@ class Profile extends React.Component {
             </table>
             <div className="button">
               <input type="submit" value="Save" />
+            </div>
+            <div>
+              <Timer />
             </div>
           </form>
         </section>

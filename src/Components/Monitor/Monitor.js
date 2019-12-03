@@ -26,10 +26,10 @@ const Monitor = () => {
   return (
     <div className="monitor" style={monitorStyle}>
       <PersonList />
-
-      {/* show api only on time */}
-      {/* {showSection &&  
-        } */}
+      {/* 
+      show api only on time
+      {showSection &&  
+        }
 
       <div className="api">
         <Weather
@@ -38,7 +38,7 @@ const Monitor = () => {
           country="Germany"
         />
         <DbApi />
-      </div>
+      </div> */}
     </div>
   );
 };

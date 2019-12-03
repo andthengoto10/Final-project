@@ -30,6 +30,11 @@ class Kurse extends Component {
           <div className="kursen_container">
             <Link to="/kurs1">
               <div className="kurs" style={kursDiv}>
+                <h2>Neues Kurs</h2>
+              </div>
+            </Link>
+            <Link to="/kurs1">
+              <div className="kurs" style={kursDiv}>
                 <h2>Vollzeit Kurs</h2>
               </div>
             </Link>
