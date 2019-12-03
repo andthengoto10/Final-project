@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
+import Logo from "../../assest/Image/logo.png";
 
 const Nav = () => {
   return (
@@ -24,10 +25,15 @@ const Nav = () => {
             </Link>
           </li>
           <li>
+            <Link to="/kurse">
+              <i>Kurse</i>
+            </Link>
+          </li>
+          {/* <li>
             <Link to="/members">
               <i>Members</i>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/report">
               <i>Report</i>
@@ -36,11 +42,6 @@ const Nav = () => {
           <li>
             <Link to="/userProfile">
               <i>Userprofile</i>
-            </Link>
-          </li>
-          <li>
-            <Link to="/kurse">
-              <i>Kurse</i>
             </Link>
           </li>
         </ul>

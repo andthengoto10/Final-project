@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Members from "../Members/Members";
 
+const hStyle = {
+  "text-align": "center"
+};
 class Kurs1 extends Component {
   constructor(props) {
     super(props);
@@ -9,7 +12,7 @@ class Kurs1 extends Component {
   render() {
     return (
       <div>
-        <h1>Kurs2</h1>
+        <h1 style={hStyle}>Teilzeit Kurs</h1>
         <Members />
       </div>
     );
