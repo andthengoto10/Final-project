@@ -9,6 +9,8 @@
   margin-left: 20vh;
 } */
 .kurs {
+  font-family: "Fira-sans", sans-serif !important;
+
   border-radius: 10px;
   text-align: center;
   justify-content: center;

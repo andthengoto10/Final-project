@@ -35,6 +35,7 @@
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .even {
   background-color: #000;
 }
@@ -43,6 +44,8 @@
   background-color: #c5f8fc;
 }
 
+=======
+>>>>>>> 70972cb4f98234aa48c713269d90f49c463a6c3c
 .popup {
   position: fixed;
   width: 100%;
