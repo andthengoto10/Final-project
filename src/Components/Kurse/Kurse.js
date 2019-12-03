@@ -3,8 +3,21 @@ import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import Kurs1 from "./Kurs1";
 import Kurs2 from "./Kurs2";
 import Error from "../Error";
+import "./kurs.css";
 
-const kursDiv = {};
+// const cont = {
+//   display: "flex",
+//   flexDirection: "row"
+// };
+
+const kursDiv = {
+  height: "100px",
+  width: "160px",
+  backgroundColor: "#3dd7ac",
+  margin: "10px 10px",
+  borderRadius: "5px"
+};
+
 class Kurse extends Component {
   constructor(props) {
     super(props);
@@ -14,19 +27,17 @@ class Kurse extends Component {
     return (
       <div className="kurs_container">
         <BrowserRouter>
-          <div>
-            <ul>
-              <li>
-                <Link to="/kurs1">
-                  <i>Kurs1</i>
-                </Link>
-              </li>
-              <li>
-                <Link to="/kurs2">
-                  <i>Kurs2</i>
-                </Link>
-              </li>
-            </ul>
+          <div className="kursen_container">
+            <Link to="/kurs1">
+              <div className="kurs" style={kursDiv}>
+                <h2>Kurs1</h2>
+              </div>
+            </Link>
+            <Link to="/kurs2">
+              <div className="kurs" style={kursDiv}>
+                <h2>Kurs2</h2>
+              </div>
+            </Link>
           </div>
           <div className="kurse">
             <Switch>

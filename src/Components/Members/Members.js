@@ -9,28 +9,27 @@ class Members extends React.Component {
     super(props);
     this.state = {
       personData: Data,
-      query: "Re"
+      query: ""
     };
   }
   render() {
     // general search function
     const searchThem = (arr, query, callback) => {
-        return (
-          arr.filter(item =>
-                (callback(item)).
-                toLowerCase().search(query.
-                toLowerCase())!==-1)
-          )
-    }
+      return arr.filter(
+        item =>
+          callback(item)
+            .toLowerCase()
+            .search(query.toLowerCase()) !== -1
+      );
+    };
     // applying function to search by first and last name
     const searchedMembers = searchThem(
-        this.state.personData,
-        this.state.query,
-        (item) => 
-          (item.firstName+item.lastName)
-      )
+      this.state.personData,
+      this.state.query,
+      item => item.firstName + item.lastName
+    );
 
-     const AllMembers = searchedMembers.map(MyData => (
+    const AllMembers = searchedMembers.map(MyData => (
       <MembersList key={uuid()} personData={MyData} />
     ));
 

@@ -9,7 +9,6 @@ class Kurs1 extends Component {
   render() {
     return (
       <div>
-        <h1>Kurs1</h1>
         <Members />
       </div>
     );
