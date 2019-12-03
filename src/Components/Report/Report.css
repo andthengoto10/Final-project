@@ -37,13 +37,6 @@
 .bar input[type="text"]:disabled {
   color: #990000;
 }
-.even {
-  background-color: #cefcc5;
-}
-
-.odd {
-  background-color: #c5f8fc;
-}
 
 .main-bar {
   background-color: #3dd7ac;

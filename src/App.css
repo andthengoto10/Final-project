@@ -25,9 +25,19 @@
   display: flex;
   flex-direction: row;
 } */
-.App {
-  font-family: "Fira Mono", monospace;
+
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans&display=swap");
+
+* {
+  font-family: "Fira Sans", sans-serif !important;
 }
 .container {
   height: -webkit-fill-available;
+}
+.even {
+  background-color: #3dd;
+}
+
+.odd {
+  background-color: #7ac;
 }
