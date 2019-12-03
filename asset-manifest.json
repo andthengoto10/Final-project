@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Final-project/static/css/main.4cae560a.chunk.css",
+    "main.js": "/Final-project/static/js/main.e205252f.chunk.js",
+    "main.js.map": "/Final-project/static/js/main.e205252f.chunk.js.map",
+    "runtime-main.js": "/Final-project/static/js/runtime-main.6136ee8e.js",
+    "runtime-main.js.map": "/Final-project/static/js/runtime-main.6136ee8e.js.map",
+    "static/js/2.6c0d1d4f.chunk.js": "/Final-project/static/js/2.6c0d1d4f.chunk.js",
+    "static/js/2.6c0d1d4f.chunk.js.map": "/Final-project/static/js/2.6c0d1d4f.chunk.js.map",
+    "index.html": "/Final-project/index.html",
+    "precache-manifest.e8cc7e062c710868b5e9984e4e700a16.js": "/Final-project/precache-manifest.e8cc7e062c710868b5e9984e4e700a16.js",
+    "service-worker.js": "/Final-project/service-worker.js",
+    "static/css/main.4cae560a.chunk.css.map": "/Final-project/static/css/main.4cae560a.chunk.css.map",
+    "static/media/anton.png": "/Final-project/static/media/anton.9fa7c94e.png",
+    "static/media/bull.png": "/Final-project/static/media/bull.3740cd1f.png",
+    "static/media/disappointment.jpg": "/Final-project/static/media/disappointment.12e55af3.jpg",
+    "static/media/happy.png": "/Final-project/static/media/happy.7c27ffed.png",
+    "static/media/horse.png": "/Final-project/static/media/horse.a904fed1.png",
+    "static/media/logo.png": "/Final-project/static/media/logo.9eaab74d.png",
+    "static/media/mad.png": "/Final-project/static/media/mad.f6f796b7.png",
+    "static/media/monkey.png": "/Final-project/static/media/monkey.2e90aabc.png",
+    "static/media/mustafa.png": "/Final-project/static/media/mustafa.3dc92f5b.png",
+    "static/media/ontime.jpg": "/Final-project/static/media/ontime.c596d6e8.jpg",
+    "static/media/penguin.png": "/Final-project/static/media/penguin.67c377a2.png",
+    "static/media/UserProfile.css": "/Final-project/static/media/portfolioBg.731e0563.jpg",
+    "static/media/rabbit.png": "/Final-project/static/media/rabbit.4903cec0.png",
+    "static/media/rezan.png": "/Final-project/static/media/rezan.1c78d736.png",
+    "static/media/sad.png": "/Final-project/static/media/sad.8c0b4eb4.png",
+    "static/media/tolate.jpg": "/Final-project/static/media/tolate.70e128ee.jpg",
+    "static/media/waeel.png": "/Final-project/static/media/waeel.ec94034a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6136ee8e.js",
+    "static/js/2.6c0d1d4f.chunk.js",
+    "static/css/main.4cae560a.chunk.css",
+    "static/js/main.e205252f.chunk.js"
+  ]
+}
