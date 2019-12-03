@@ -12,7 +12,7 @@ class Kurs1 extends Component {
   render() {
     return (
       <div>
-        <h1 style={hStyle}>Kurs 1</h1>
+        <h1 style={hStyle}>Teilzeit Kurs</h1>
         <Members />
       </div>
     );
