@@ -1,0 +1,90 @@
+.profileContainer {
+  padding: 3% 1% 1% 1%;
+}
+header {
+  width: 80%;
+  height: 35vh;
+  background: url("../../assest/Image/portfolioBg.jpg") center/cover no-repeat;
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profileContainer h1 {
+  display: inline;
+  padding-left: 36px;
+}
+.profileContent {
+  width: 80%;
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px #ccc;
+  min-height: 65vh;
+  margin: 0 auto;
+}
+.imgProfile {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px #ccc;
+  background-color: #fff;
+  position: relative;
+  top: -80px;
+  left: 40%;
+}
+.profileTable {
+  width: 90%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 10px;
+}
+.profileTable td,
+.profileTable th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+.profileTable tr {
+  background-color: #f2f2f2;
+}
+.profileTable tr:nth-child(even) {
+  background-color: #3dd7ac;
+}
+.profileTable input[type="text"] {
+  width: 210px;
+  height: 20px;
+  font-size: 16px;
+}
+input[type="submit"] {
+  background-color: #3dd7ac;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  font-size: 23px;
+  padding: 8px 32px;
+  margin: 20px 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+input[type="button"] {
+  background-color: #3dd7ac;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  font-size: 23px;
+  padding: 8px 32px;
+  margin: 20px 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+}
+select {
+  width: 15%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}

@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import Swipe from './Swipe'
 import './Report.css'
 
-
 // initial json object
 let initialSwipes = JSON.stringify([
     {"date": "01.11.19", "was": true, "in": "", "out": "", reason: "" },
@@ -60,5 +59,6 @@ const Report = (props) => {
 
     
 }
+
 
 export default Report

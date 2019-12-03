@@ -4,7 +4,6 @@ import "./Dbapi.css";
 const db = {
   display: "flex",
   height: "650px",
-  backgroundColor: "#00DFAC",
   width: "fit-content"
 };
 
