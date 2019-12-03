@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-.logo {
-  width: 220px;
-  float: right;
-  margin: 10px;
-=======
 /* .App {
   text-align: center;
 }
@@ -37,9 +31,14 @@
 * {
   font-family: "Fira Sans", sans-serif !important;
 }
+.logo {
+  width: 220px;
+  float: right;
+  margin: 10px;
+}
+
 .container {
   height: -webkit-fill-available;
->>>>>>> 70972cb4f98234aa48c713269d90f49c463a6c3c
 }
 .even {
   background-color: #3dd;

@@ -39,17 +39,6 @@
 .bar input[type="text"]:disabled {
   color: #990000;
 }
-<<<<<<< HEAD
-.even {
-  background-color: #3dd7ac;
-}
-
-.odd {
-  background-color: #c5f8fc;
-}
-=======
-
->>>>>>> 70972cb4f98234aa48c713269d90f49c463a6c3c
 .main-bar {
   background-color: #3dd7ac;
   color: aliceblue;
