@@ -8,6 +8,7 @@
     "telefon": "0176-333456744",
     "matrikelNummer": "19010001",
     "geburtsDatum": "03.11.1992",
+    "anwesenheit": "Hier",
     "adresse": {
       "stadt": "Köln",
       "street": "Wirsberg",
@@ -58,6 +59,7 @@
     "telefon": "0176-123456789",
     "matrikelNummer": "19010002",
     "geburtsDatum": "03.11.1982",
+    "anwesenheit": "Hier",
     "adresse": {
       "plz": 51103,
       "stadt": "Düsseldorf",
@@ -109,6 +111,7 @@
     "telefon": "0176-9284567454",
     "matrikelNummer": "19010003",
     "geburtsDatum": "14.05.1986",
+    "anwesenheit": "Hier",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Blummen",
@@ -159,6 +162,7 @@
     "telefon": "0176-156456789",
     "matrikelNummer": "19010004",
     "geburtsDatum": "01.12.1979",
+    "anwesenheit": "Hier",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Sun",
@@ -209,6 +213,7 @@
     "telefon": "0176-333456744",
     "matrikelNummer": "19010005",
     "geburtsDatum": "14.03.1984",
+    "anwesenheit": "Hier",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Selikumer Str",
@@ -259,6 +264,7 @@
     "telefon": "0176-333456744",
     "matrikelNummer": "19010006",
     "geburtsDatum": "22.02.1983",
+    "anwesenheit": "Hier",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Bonner",
@@ -308,14 +314,15 @@
     "lastName": "Rybakov",
     "telefon": "0176-333456744",
     "matrikelNummer": "19010007",
-    "geburtsDatum": "16.13.1982",
+    "geburtsDatum": "22.02.1983",
+    "anwesenheit": "Hier",
     "adresse": {
-      "stadt": "Düsseldorf",
-      "street": "Namibia",
-      "hausNummer": "23"
+      "stadt": "Neuss",
+      "street": "Bergheimer",
+      "hausNummer": "450"
     },
     "email": "anton.rybakov@gmail.com",
-    "roles": "Admin",
+    "roles": "none",
     "swipes": [
       { "date": "01.11.19", "was": true, "in": "", "out": "" },
       { "date": "02.11.19", "was": true, "in": "", "out": "" },
@@ -359,6 +366,7 @@
     "telefon": "0176-37445732",
     "matrikelNummer": "19010008",
     "geburtsDatum": "24.06.1985",
+    "anwesenheit": "Hier",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Schul",
@@ -409,6 +417,7 @@
     "telefon": "0176-33456342",
     "matrikelNummer": "19010009",
     "geburtsDatum": "23.04.1969",
+    "anwesenheit": "Hier",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Oberdorf",
@@ -459,6 +468,7 @@
     "telefon": "0176-57449328",
     "matrikelNummer": "19010010",
     "geburtsDatum": "18.02.1981",
+    "anwesenheit": "Hier",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Post",
@@ -509,6 +519,7 @@
     "telefon": "0176-43456344",
     "matrikelNummer": "19010011",
     "geburtsDatum": "14.03.1984",
+    "anwesenheit": "Hier",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Schulhaus",
@@ -559,6 +570,7 @@
     "telefon": "0176-31556781",
     "matrikelNummer": "19010012",
     "geburtsDatum": "14.03.1984",
+    "anwesenheit": "Hier",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Friedhof",
@@ -609,6 +621,7 @@
     "telefon": "0176-36556723",
     "matrikelNummer": "19010013",
     "geburtsDatum": "14.03.1984",
+    "anwesenheit": "Hier",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Industrie",
@@ -659,6 +672,7 @@
     "telefon": "0176-333456744",
     "matrikelNummer": "19010014",
     "geburtsDatum": "14.03.1984",
+    "anwesenheit": "Hier",
     "adresse": {
       "stadt": "Düsseldorf",
       "street": "Kramer",

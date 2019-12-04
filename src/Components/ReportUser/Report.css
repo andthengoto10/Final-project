@@ -48,18 +48,6 @@
 }
 /*# sourceMappingURL=Report.css.map */
 
-/* .export {
-  margin-left: 100vh;
-} */
-.select {
-  margin-top: 20px;
-  margin-left: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: safe;
-}
-
-.export {
-  height: 30px;
-  margin-left: 30px;
+.reportMsg {
+  margin-left: 100px;
 }

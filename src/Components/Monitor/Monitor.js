@@ -13,6 +13,11 @@ const monitorStyle = {
   justifyContent: "flex-start",
   marginTop: "25px"
 };
+
+const contSlyle = {
+  backgroundColor: "#3dd",
+  margim: "0 auto"
+};
 const Monitor = () => {
   // state to show section
   const [setShowSection] = useState(false);
@@ -25,7 +30,9 @@ const Monitor = () => {
 
   return (
     <div className="monitor" style={monitorStyle}>
-      <PersonList />
+      <div className="monitor_cont">
+        <PersonList />
+      </div>
       {/* 
       show api only on time
       {showSection &&  

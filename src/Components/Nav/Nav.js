@@ -15,7 +15,7 @@ const Nav = () => {
       <nav id="meny">
         <ul>
           <li>
-            <Link to="/">
+            <Link to="/monitor">
               <i>Monitor</i>
             </Link>
           </li>
@@ -25,7 +25,12 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link to="/kurse">
+            <Link to="/report">
+              <i>Report</i>
+            </Link>
+          </li>
+          <li>
+            <Link to="/members">
               <i>Kurse</i>
             </Link>
           </li>
@@ -34,16 +39,22 @@ const Nav = () => {
               <i>Members</i>
             </Link>
           </li> */}
-          <li>
-            <Link to="/report">
-              <i>Report</i>
-            </Link>
-          </li>
-          <li>
+
+          {/* <li>
             <Link to="/userProfile">
               <i>Userprofile</i>
             </Link>
-          </li>
+          </li>{" "}
+          <li>
+            <Link to="/register">
+              <i>Regis</i>
+            </Link>
+          </li>{" "}
+          <li>
+            <Link to="/login">
+              <i>login</i>
+            </Link>
+          </li> */}
         </ul>
       </nav>
     </div>

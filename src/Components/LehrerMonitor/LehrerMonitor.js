@@ -5,7 +5,7 @@ import MembersList from "./MembersList";
 import uuid from "react-uuid";
 import { Link } from "react-router-dom";
 
-class Members extends React.Component {
+class LehrerMonitor extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,41 +36,32 @@ class Members extends React.Component {
 
     return (
       <section className="membersContainer">
-        <div className="select-members">
-          <select name="Kurs" id>
-            <option>Kurs 1</option>
-            <option>Kurs 2</option>
-            <option>Kurs 3</option>
-            <option>Kurs 4</option>
-          </select>
-        </div>
         {/* search */}
-        <div className="search-members">
-          <label htmlFor="search">Search:</label>
+        {/* <div className="search-members">
+          <label htmlFor="search">search</label>
           <input
             id="search"
             type="text"
             value={this.state.query}
             onChange={e => this.setState({ query: e.target.value })}
           />
-        </div>
-        {/* search */}
-
-        <Link to="/profile">
-          <table className="membersTable">
-            <tr>
-              <th>Matrikel Nummer</th>
-              <th>Name</th>
-              <th>Telefonnummer</th>
-              <th>E-Mail</th>
-              <th>Addresse</th>
-            </tr>
-            {AllMembers}
-          </table>
+        </div> */}
+        {/* search */}{" "}
+        <Link to="/reportUser">
+          <h3 className="tableTitel">01.09.2019</h3>
         </Link>
+        <table className="membersTable">
+          <tr>
+            <th>Name</th>
+            <th>Anwesenheit</th>
+            {/* <th>E-Mail</th>
+            <th>Addresse</th> */}
+          </tr>
+          {AllMembers}
+        </table>
       </section>
     );
   }
 }
 
-export default Members;
+export default LehrerMonitor;

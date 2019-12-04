@@ -8,8 +8,13 @@ import Nav from "../Nav/Nav";
 import Report from "../Report/Report";
 import UserProfile from "../UserProfile/UserProfile";
 import Kurse from "../Kurse/Kurse";
+import Register from "../Register/register";
+import Login from "../Login/login";
+import LehrerMonitor from "../LehrerMonitor/LehrerMonitor";
+import Export from "../Report/export";
 
 import "./Content.css";
+import ReportUser from "../ReportUser/ReportUser";
 
 class Content extends Component {
   render() {
@@ -19,11 +24,16 @@ class Content extends Component {
           <Nav />
           <div className="content">
             <Switch>
-              <Route exact path="/" component={Monitor} />
+              <Route exact path="/" component={Register} />
               <Route path="/members" component={Members} />
               <Route path="/profile" component={Profile} />
               <Route path="/report" component={Report} />
               <Route path="/kurse" component={Kurse} />
+              <Route path="/monitor" component={LehrerMonitor} />
+              <Route path="/reportUser" component={ReportUser} />
+
+              <Route path="/login" component={Login} />
+              <Route path="/export" component={Export} />
 
               <Route path="/userProfile" component={UserProfile} />
               {/* <Redirect to="/" /> */}

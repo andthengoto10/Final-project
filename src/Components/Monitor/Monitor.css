@@ -1,16 +1,23 @@
 /* @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap"); */
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans&display=swap");
 
+* {
+}
 h1 {
   margin: 2vw;
 }
 .monitor {
   max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  justify-items: center;
   font-family: "Fira-sans", sans-serif;
   /* font-size: calc(1em + .1vw); */
   line-height: 1.6;
-  margin: 0 1vw;
-  min-height: 100vh;
+  margin: 0 auto;
+  min-height: 800px;
+}
+.monitor_cont {
+  background-color: #000033;
+  margin-left: 20vw;
 }

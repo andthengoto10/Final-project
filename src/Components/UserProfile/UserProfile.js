@@ -1,8 +1,7 @@
 import React from "react";
 import "./UserProfile.css";
 import Data from "../Data.json";
-import Timer from "./Timer";
-// import uuid from "react-uuid";
+import { Link } from "react-router-dom";
 
 const nameStyle = {
   display: "flex",
@@ -17,7 +16,7 @@ const h1Style = {
 class Profile extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { MyData: Data[0], AllData: Data, value: "" };
+    this.state = { MyData: Data[6], AllData: Data, value: "" };
   }
 
   handleChange = e => {
@@ -43,34 +42,23 @@ class Profile extends React.Component {
     // });
     return (
       <section className="profileContainer">
-        <header />
+        {/* <header /> */}
         <section className="profileContent">
-          <img className="imgProfile" src={this.state.MyData.photo} alt="" />
+          {/* <img className="imgProfile" src={this.state.MyData.photo} alt="" /> */}
           <form>
             <div style={nameStyle}>
-              <h1 style={h1Style}>Waeel Alsydo</h1>
+              <h1 style={h1Style}>Anton Rybakov</h1>
             </div>
 
             <table className="profileTable">
-              <tr>
+              {/* <tr>
                 <th>
                   <label htmlFor="id">ID:</label>
                 </th>
                 <td>
                   <input type="text" value={this.state.MyData.id} />
                 </td>
-              </tr>
-              <tr>
-                <th>
-                  <label htmlFor="chipNumber">Chip Number:</label>
-                </th>
-                <td>
-                  <input
-                    type="text"
-                    placeholder={this.state.MyData.chipNumber}
-                  />
-                </td>
-              </tr>
+              </tr> */}
               <tr>
                 <th>
                   <label htmlFor="Firstname">First Name:</label>
@@ -95,7 +83,7 @@ class Profile extends React.Component {
                   <label htmlFor="telefon">Tel:</label>
                 </th>
                 <td>
-                  <input type="text" placeholder={this.state.MyData.telefon} />
+                  <input type="text" placeholder="" />
                 </td>
               </tr>
               <tr>
@@ -113,44 +101,46 @@ class Profile extends React.Component {
                 <td>
                   <input
                     type="text"
-                    placeholder={this.state.MyData.adresse.stadt}
+                    // placeholder={this.state.MyData.adresse.stadt}
                   />
                   <input
                     type="text"
-                    placeholder={this.state.MyData.adresse.street + "Str"}
+                    // placeholder={this.state.MyData.adresse.street + "Str"}
                   />
                   <input
                     type="text"
-                    placeholder={this.state.MyData.adresse.hausNummer}
+                    // placeholder={this.state.MyData.adresse.hausNummer}
                   />
                 </td>
               </tr>
               <tr>
                 <th>
-                  <label htmlFor="roles">Roles:</label>
+                  <label htmlFor="roles">Role:</label>
                 </th>
                 <td>
-                  <input type="text" value={this.state.MyData.roles} />
+                  <input type="text" value="none" />
                 </td>
               </tr>
               <tr>
                 <th>
-                  <label htmlFor="matdikelNummer">Matdikel Nummer:</label>
+                  <label htmlFor="matdikelNummer">Matrikel Nummer:</label>
                 </th>
                 <td>
-                  <input
-                    type="text"
-                    placeholder={this.state.MyData.matrikelNummer}
-                  />
+                  <input type="text" value="00000000" />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label htmlFor="chipNumber">Chip Number:</label>
+                </th>
+                <td>
+                  <input type="text" value="000000000" />
                 </td>
               </tr>
             </table>
-            <div className="button">
-              <input type="submit" value="Save" />
-            </div>
-            <div>
-              <Timer />
-            </div>
+            <Link to="/members">
+              <input className="button" type="submit" value="Save" />
+            </Link>
           </form>
         </section>
       </section>

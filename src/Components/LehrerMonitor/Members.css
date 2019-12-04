@@ -8,6 +8,9 @@
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.tableTitel {
+  margin-left: 100px;
+}
 .membersTable td,
 .membersTable th {
   border: 1px solid #ddd;
@@ -28,10 +31,6 @@
   width: 25%;
   display: flex;
   justify-content: space-between;
-}
-.search-members label {
-  margin-left: 0px;
-  padding-left: 0px;
 }
 .select-members {
   margin: 2vh 10vw;
