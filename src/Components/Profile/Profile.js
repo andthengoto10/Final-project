@@ -1,7 +1,7 @@
 import React from "react";
 import "./Profile.css";
 import Data from "../Data.json";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const nameStyle = {
   display: "flex",

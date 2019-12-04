@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Swipe from "./Swipe";
 import "./Report.css";
-import Data from "../Data.json";
+// import Data from "../Data.json";
 
 // initial json object
 let initialSwipes = JSON.stringify([

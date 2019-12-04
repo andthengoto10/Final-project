@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Monitor from "../Monitor/Monitor";
+// import Monitor from "../Monitor/Monitor";
 import Members from "../Members/Members";
 import Profile from "../Profile/Profile";
 import Error from "../Error";

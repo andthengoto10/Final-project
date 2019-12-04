@@ -3,7 +3,7 @@ import Swipe from "./Swipe";
 import "./Report.css";
 import { Link } from "react-router-dom";
 
-import Data from "../Data.json";
+// import Data from "../Data.json";
 import exp from "./export.png";
 
 // initial json object

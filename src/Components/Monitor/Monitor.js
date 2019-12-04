@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import moment from "moment";
-import DbApi from "./Dbapi/Dbapi";
-import Weather from "./Weather/Weather";
+import React from "react";
+// import moment from "moment";
+// import DbApi from "./Dbapi/Dbapi";
+// import Weather from "./Weather/Weather";
 import PersonList from "./PersonList/PersonList";
 
 import "./Monitor.css";
@@ -14,14 +14,14 @@ const monitorStyle = {
   marginTop: "25px"
 };
 
-const contSlyle = {
-  backgroundColor: "#3dd",
-  margim: "0 auto"
-};
+// const contSlyle = {
+//   backgroundColor: "#3dd",
+//   margim: "0 auto"
+// };
 const Monitor = () => {
   // state to show section
-  const [setShowSection] = useState(false);
-  const MINUT = 60000;
+  // const [setShowSection] = useState(false);
+  // const MINUT = 60000;
 
   // checking time every 10 minutes and hide api section between 7 pm and 8 am
   // setInterval(() => {
